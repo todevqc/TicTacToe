@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jouer une partie</title>
+</head>
+<body>
+    <section class="principale">
+        <section class="lien_retour">
+            <a href="index.html">Retour a la page principale</a>
+            <img src="">
+        </section>
+        <section class="plateau">
+            <p id="l1c1" onclick="jouer(this)"></p>
+            <p id="l1c2" onclick="jouer(this)"></p>
+            <p id="l1c3" onclick="jouer(this)"></p>
+            <p id="l2c1" onclick="jouer(this)"></p>
+            <p id="l2c2" onclick="jouer(this)"></p>
+            <p id="l2c3" onclick="jouer(this)"></p>
+            <p id="l3c1" onclick="jouer(this)"></p>
+            <p id="l3c2" onclick="jouer(this)"></p>
+            <p id="l3c3" onclick="jouer(this)"></p>
+        </section>
+        <section class="info_joueur">
+            <h1 class="titre titre_partie">Jeu de Tic-tac-toe</h1>
+            <div id="qui_joue"></div>
+            <div id="erreur"></div>
+            <div id="gagnant"></div>
+        </section>        
+    </section>
+    <footer>
+        <p>Le super jeu de Tic-tac-toe &#169; 2021</p>
+    </footer> 
+    <script src="script.js"></script> 
+</body>
+</html>

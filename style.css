@@ -1,0 +1,125 @@
+html,
+body {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  padding: 10px;
+  margin: 20px 5px auto 5px;
+  background-color: #096874;
+  color: beige;
+}
+.principale {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 80vh;
+  background-color: #030b24;
+}
+.titre {
+  font-size: 1.4em;
+  padding: 10px;
+  margin: 20px 5px auto 5px;
+  background-color: #096874;
+  color: beige;
+}
+.titre_partie {
+  padding: 5px 10px;
+  margin-top: 0 !important;
+}
+
+.principale section {
+  margin-top: 20px;
+}
+.plateau {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 174px;
+  margin: 0;
+  padding: 0;
+}
+.info_joueur {
+  width: 240px;
+  flex-direction: row;
+}
+.lien_retour {
+  width: 240px;
+  background-color: #096874;
+  height: fit-content;
+  margin: 0 10px;
+}
+.plateau p {
+  min-width: 42px;
+  min-height: 42px;
+  background-color: #c2af09;
+  border: 2px solid #dada57;
+  margin: 2px;
+  padding: 3px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+.lien_retour a {
+  margin-top: 0;
+  display: block;
+}
+img {
+  width: 100px;
+  margin: 6px;
+}
+.X {
+  background-color: #ac310c !important;
+  border: 2px solid #ff3c00 !important;
+}
+.O {
+  background-color: #19056e !important;
+  border: 2px solid #006fc9 !important;
+}
+.info_joueur div {
+  height: 20px;
+  margin: 4px 5px 0px 5px;
+  padding: 8px;
+  color: beige;
+}
+.erreur {
+  background-color: #b32020;
+  border: 2px solid #fc4343;
+}
+.gagnant {
+  margin-bottom: auto auto 0 auto !important;
+  background-color: #1b3f03;
+  border: 2px solid #00c95a;
+}
+.effet_victoir {
+  -webkit-transform: scale(1.4); /* Safari et Chrome */
+  -moz-transform: scale(1.4); /* Firefox */
+  -ms-transform: scale(1.4); /* Internet Explorer 9 */
+  -o-transform: scale(1.4); /* Opera */
+  transform: scale(1.4);
+  padding: auto !important;
+  color: #fff;
+}
+footer {
+  font-size: 0.8em;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .principale {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .principale .titre,
+  .principale a,
+  .principale section {
+    align-self: flex-start;
+    margin: 5px auto;
+  }
+}
